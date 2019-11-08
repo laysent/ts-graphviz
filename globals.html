@@ -78,6 +78,7 @@
 							</ul>
 							<h3>Base Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/dotbase.html" class="tsd-kind-icon">Dot<wbr>Base</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a></li>
 							</ul>
 							<h3>Attributes Classes</h3>
@@ -122,17 +123,24 @@
 								<li class="tsd-kind-class"><a href="classes/stylevalue.html" class="tsd-kind-icon">Style<wbr>Value</a></li>
 								<li class="tsd-kind-class"><a href="classes/viewportvalue.html" class="tsd-kind-icon">View<wbr>Port<wbr>Value</a></li>
 							</ul>
+							<h3>Other Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/context.html" class="tsd-kind-icon">Context</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a></li>
+							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/icontext.html" class="tsd-kind-icon">IContext</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/idot.html" class="tsd-kind-icon">IDot</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias"><a href="globals.html#graphtype" class="tsd-kind-icon">Graph<wbr>Type</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -148,12 +156,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="graphtype" class="tsd-anchor"></a>
-					<h3>Graph<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">Graph<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"digraph"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"graph"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"subgraph"</span></div>
+					<a name="clustertype" class="tsd-anchor"></a>
+					<h3>Cluster<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">Cluster<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="globals.html#rootclustertype" class="tsd-signature-type">RootClusterType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"subgraph"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c8ff4b/src/model/cluster/Cluster.ts#L11">model/cluster/Cluster.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dc57765/src/model/cluster/Cluster.ts#L14">model/cluster/Cluster.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="rootclustertype" class="tsd-anchor"></a>
+					<h3>Root<wbr>Cluster<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">Root<wbr>Cluster<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"digraph"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"graph"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dc57765/src/model/cluster/Cluster.ts#L12">model/cluster/Cluster.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -170,7 +188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c8ff4b/src/usecase.ts#L3">usecase.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dc57765/src/usecase.ts#L3">usecase.ts:3</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="classes/digraph.html" class="tsd-signature-type">Digraph</a></h4>
@@ -187,7 +205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c8ff4b/src/usecase.ts#L8">usecase.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dc57765/src/usecase.ts#L8">usecase.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="classes/graph.html" class="tsd-signature-type">Graph</a></h4>
@@ -228,10 +246,16 @@
 						<a href="classes/colorvalue.html" class="tsd-kind-icon">Color<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/context.html" class="tsd-kind-icon">Context</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/digraph.html" class="tsd-kind-icon">Digraph</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/dirtypevalue.html" class="tsd-kind-icon">Dir<wbr>Type<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/dotbase.html" class="tsd-kind-icon">Dot<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/doublevalue.html" class="tsd-kind-icon">Double<wbr>Value</a>
@@ -308,6 +332,9 @@
 					<li class=" tsd-kind-class">
 						<a href="classes/rectvalue.html" class="tsd-kind-icon">Rect<wbr>Value</a>
 					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/shapevalue.html" class="tsd-kind-icon">Shape<wbr>Value</a>
 					</li>
@@ -333,10 +360,16 @@
 						<a href="classes/viewportvalue.html" class="tsd-kind-icon">View<wbr>Port<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/icontext.html" class="tsd-kind-icon">IContext</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/idot.html" class="tsd-kind-icon">IDot</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#graphtype" class="tsd-kind-icon">Graph<wbr>Type</a>
+						<a href="globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#digraph" class="tsd-kind-icon">digraph</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RankdirValue | ts-graphviz</title>
+	<title>IContext | ts-graphviz</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,37 +56,28 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="rankdirvalue.html">RankdirValue</a>
+					<a href="icontext.html">IContext</a>
 				</li>
 			</ul>
-			<h1>Class RankdirValue</h1>
+			<h1>Interface IContext</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="graphvizvalue.html" class="tsd-signature-type">GraphvizValue</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">RankdirValue</span>
-							</li>
-						</ul>
+						<span class="target">IContext</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
-				<h3>Implements</h3>
+				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/idot.html" class="tsd-signature-type">IDot</a></li>
+					<li><a href="../classes/context.html" class="tsd-signature-type">Context</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -94,87 +85,25 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="rankdirvalue.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="rankdirvalue.html#value" class="tsd-kind-icon">value</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-inherited">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="rankdirvalue.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icontext.html#graphtype" class="tsd-kind-icon">graph<wbr>Type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Rankdir<wbr>Value<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"TB"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"BT"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"LR"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"RL"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="rankdirvalue.html" class="tsd-signature-type">RankdirValue</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides <a href="graphvizvalue.html">GraphvizValue</a>.<a href="graphvizvalue.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dc57765/src/model/values/valueType.ts#L135">model/values/valueType.ts:135</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">"TB"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"BT"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"LR"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"RL"</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="rankdirvalue.html" class="tsd-signature-type">RankdirValue</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-					<a name="value" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="graphtype" class="tsd-anchor"></a>
+					<h3>graph<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">graph<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../globals.html#rootclustertype" class="tsd-signature-type">RootClusterType</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphvizvalue.html">GraphvizValue</a>.<a href="graphvizvalue.html#value">value</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dc57765/src/model/values/valueType.ts#L11">model/values/valueType.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dc57765/src/model/Context.ts#L4">model/Context.ts:4</a></li>
 						</ul>
 					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="todot" class="tsd-anchor"></a>
-					<h3>to<wbr>Dot</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Dot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/idot.html">IDot</a>.<a href="../interfaces/idot.html#todot">toDot</a></p>
-								<p>Inherited from <a href="graphvizvalue.html">GraphvizValue</a>.<a href="graphvizvalue.html#todot">toDot</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dc57765/src/model/values/valueType.ts#L14">model/values/valueType.ts:14</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -190,17 +119,11 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class">
-						<a href="rankdirvalue.html" class="tsd-kind-icon">Rankdir<wbr>Value</a>
+					<li class="current tsd-kind-interface">
+						<a href="icontext.html" class="tsd-kind-icon">IContext</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="rankdirvalue.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="rankdirvalue.html#value" class="tsd-kind-icon">value</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="rankdirvalue.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="icontext.html#graphtype" class="tsd-kind-icon">graph<wbr>Type</a>
 							</li>
 						</ul>
 					</li>
