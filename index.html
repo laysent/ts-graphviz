@@ -64,11 +64,76 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p><a href="https://github.com/kamiazya/ts-graphviz/actions?workflow=Linux"><img src="https://github.com/kamiazya/ts-graphviz/workflows/Linux/badge.svg" alt="GitHub Action"></a></p>
+				<p><a href="https://github.com/kamiazya/ts-graphviz/actions?workflow=NodeCI"><img src="https://github.com/kamiazya/ts-graphviz/workflows/NodeCI/badge.svg" alt="GitHub Action"></a> <a href="https://badge.fury.io/js/ts-graphviz"><img src="https://badge.fury.io/js/ts-graphviz.svg" alt="npm version"></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a> <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier"></a></p>
 				<a href="#ts-graphviz" id="ts-graphviz" style="color: inherit; text-decoration: none;">
 					<h1>ts-graphviz</h1>
 				</a>
-				<p>Graphviz library for TypeScript.</p>
+				<p><a href="https://graphviz.gitlab.io/">Graphviz</a> library for TypeScript.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<p>The plugin can then be installed using <a href="https://www.npmjs.com/">npm</a>:</p>
+				<p><a href="https://nodei.co/npm/ts-graphviz/"><img src="https://nodei.co/npm/ts-graphviz.png" alt="NPM"></a></p>
+				<a href="#yarn" id="yarn" style="color: inherit; text-decoration: none;">
+					<h3>yarn</h3>
+				</a>
+				<pre><code class="language-bash">yarn add -D ts-graphviz</code></pre>
+				<a href="#npm" id="npm" style="color: inherit; text-decoration: none;">
+					<h3>npm</h3>
+				</a>
+				<pre><code class="language-bash">npm install --save-dev ts-graphviz</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<a href="#script" id="script" style="color: inherit; text-decoration: none;">
+					<h3>Script</h3>
+				</a>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { digraph } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
+
+<span class="hljs-keyword">const</span> g = digraph();
+
+<span class="hljs-keyword">const</span> subgraphA = g.createSubgraph(<span class="hljs-string">'A'</span>);
+<span class="hljs-keyword">const</span> nodeA1 = subgraphA.createNode(<span class="hljs-string">'A_node1'</span>);
+<span class="hljs-keyword">const</span> nodeA2 = subgraphA.createNode(<span class="hljs-string">'A_node2'</span>);
+subgraphA.createEdge(nodeA1, nodeA2);
+
+<span class="hljs-keyword">const</span> subgraphB = g.createSubgraph(<span class="hljs-string">'B'</span>);
+<span class="hljs-keyword">const</span> nodeB1 = subgraphB.createNode(<span class="hljs-string">'B_node1'</span>);
+<span class="hljs-keyword">const</span> nodeB2 = subgraphB.createNode(<span class="hljs-string">'B_node2'</span>);
+subgraphA.createEdge(nodeB1, nodeB2);
+
+<span class="hljs-keyword">const</span> node1 = g.createNode(<span class="hljs-string">'node1'</span>);
+<span class="hljs-keyword">const</span> node2 = g.createNode(<span class="hljs-string">'node2'</span>);
+g.createEdge(node1, node2);
+<span class="hljs-keyword">const</span> dot = g.toDot();
+<span class="hljs-built_in">console</span>.log(dot);</code></pre>
+				<a href="#output" id="output" style="color: inherit; text-decoration: none;">
+					<h3>Output</h3>
+				</a>
+				<pre><code class="language-graphviz">digraph G {
+  &quot;node1&quot;;
+  &quot;node2&quot;;
+  subgraph A {
+    &quot;A_node1&quot;;
+    &quot;A_node2&quot;;
+    &quot;A_node1&quot; -&gt; &quot;A_node2&quot;;
+    &quot;B_node1&quot; -&gt; &quot;B_node2&quot;;
+  };
+  subgraph B {
+    &quot;B_node1&quot;;
+    &quot;B_node2&quot;;
+  };
+  &quot;node1&quot; -&gt; &quot;node2&quot;;
+}</code></pre>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p>This software is released under the MIT License, see LICENSE.</p>
+				<a href="#author" id="author" style="color: inherit; text-decoration: none;">
+					<h2>Author</h2>
+				</a>
+				<p><a href="https://github.com/kamiazya">kamiazya(Yuki Yamazaki)</a></p>
+				<p><a href="https://ko-fi.com/W7W5VDNO"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"></a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
