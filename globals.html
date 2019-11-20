@@ -73,6 +73,7 @@
 								<li class="tsd-kind-class"><a href="classes/digraph.html" class="tsd-kind-icon">Digraph</a></li>
 								<li class="tsd-kind-class"><a href="classes/edge.html" class="tsd-kind-icon">Edge</a></li>
 								<li class="tsd-kind-class"><a href="classes/graph.html" class="tsd-kind-icon">Graph</a></li>
+								<li class="tsd-kind-class"><a href="classes/graphedge.html" class="tsd-kind-icon">Graph<wbr>Edge</a></li>
 								<li class="tsd-kind-class"><a href="classes/node.html" class="tsd-kind-icon">Node</a></li>
 								<li class="tsd-kind-class"><a href="classes/subgraph.html" class="tsd-kind-icon">Subgraph</a></li>
 							</ul>
@@ -126,6 +127,8 @@
 							<h3>Other Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class"><a href="classes/context.html" class="tsd-kind-icon">Context</a></li>
+								<li class="tsd-kind-class"><a href="classes/digraphedge.html" class="tsd-kind-icon">Digraph<wbr>Edge</a></li>
+								<li class="tsd-kind-class"><a href="classes/nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a></li>
 							</ul>
 						</section>
@@ -140,14 +143,24 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias"><a href="globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#nodelike" class="tsd-kind-icon">Node<wbr>Like</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#nodelikeobject" class="tsd-kind-icon">Node<wbr>Like<wbr>Object</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable"><a href="globals.html#digraph" class="tsd-kind-icon">digraph</a></li>
+								<li class="tsd-kind-variable"><a href="globals.html#graph" class="tsd-kind-icon">graph</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="globals.html#digraph" class="tsd-kind-icon">digraph</a></li>
-								<li class="tsd-kind-function"><a href="globals.html#graph" class="tsd-kind-icon">graph</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-not-exported"><a href="globals.html#builder" class="tsd-kind-icon">builder</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#isnodelike" class="tsd-kind-icon">is<wbr>Node<wbr>Like</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#isnodelikeobject" class="tsd-kind-icon">is<wbr>Node<wbr>Like<wbr>Object</a></li>
 							</ul>
 						</section>
 					</div>
@@ -161,7 +174,27 @@
 					<div class="tsd-signature tsd-kind-icon">Cluster<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="globals.html#rootclustertype" class="tsd-signature-type">RootClusterType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"subgraph"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/2a01a7b/src/model/cluster/Cluster.ts#L14">model/cluster/Cluster.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/model/cluster/Cluster.ts#L14">model/cluster/Cluster.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="nodelike" class="tsd-anchor"></a>
+					<h3>Node<wbr>Like</h3>
+					<div class="tsd-signature tsd-kind-icon">Node<wbr>Like<span class="tsd-signature-symbol">:</span> <a href="globals.html#nodelikeobject" class="tsd-signature-type">NodeLikeObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/model/Node.ts#L30">model/Node.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="nodelikeobject" class="tsd-anchor"></a>
+					<h3>Node<wbr>Like<wbr>Object</h3>
+					<div class="tsd-signature tsd-kind-icon">Node<wbr>Like<wbr>Object<span class="tsd-signature-symbol">:</span> <a href="classes/node.html" class="tsd-signature-type">Node</a><span class="tsd-signature-symbol"> | </span><a href="classes/nodewithport.html" class="tsd-signature-type">NodeWithPort</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/model/Node.ts#L29">model/Node.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -171,44 +204,108 @@
 					<div class="tsd-signature tsd-kind-icon">Root<wbr>Cluster<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"digraph"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"graph"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/2a01a7b/src/model/cluster/Cluster.ts#L12">model/cluster/Cluster.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/model/cluster/Cluster.ts#L12">model/cluster/Cluster.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="digraph" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> digraph</h3>
+					<div class="tsd-signature tsd-kind-icon">digraph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;builder(Digraph)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/usecase.ts#L16">usecase.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="graph" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> graph</h3>
+					<div class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;builder(Graph)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/usecase.ts#L18">usecase.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="digraph" class="tsd-anchor"></a>
-					<h3>digraph</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">digraph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/digraph.html" class="tsd-signature-type">Digraph</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
+					<a name="builder" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> builder</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">builder&lt;G&gt;<span class="tsd-signature-symbol">(</span>cls<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Type</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/2a01a7b/src/usecase.ts#L3">usecase.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/usecase.ts#L5">usecase.ts:5</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="classes/digraph.html" class="tsd-signature-type">Digraph</a></h4>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>G<span class="tsd-signature-symbol">: </span><a href="classes/rootcluster.html" class="tsd-signature-type">RootCluster</a><span class="tsd-signature-symbol">&lt;</span><a href="classes/graphattributes.html" class="tsd-signature-type">GraphAttributes</a><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cls: <span class="tsd-signature-type">Type</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="graph" class="tsd-anchor"></a>
-					<h3>graph</h3>
+					<a name="isnodelike" class="tsd-anchor"></a>
+					<h3>is<wbr>Node<wbr>Like</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type">Graph</a></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Node<wbr>Like<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">node</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">NodeLike</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/2a01a7b/src/usecase.ts#L8">usecase.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/model/Node.ts#L36">model/Node.ts:36</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="classes/graph.html" class="tsd-signature-type">Graph</a></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">node</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">NodeLike</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="isnodelikeobject" class="tsd-anchor"></a>
+					<h3>is<wbr>Node<wbr>Like<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Node<wbr>Like<wbr>Object<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">node</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">NodeLikeObject</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/bcb9862/src/model/Node.ts#L32">model/Node.ts:32</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">node</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">NodeLikeObject</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -252,6 +349,9 @@
 						<a href="classes/digraph.html" class="tsd-kind-icon">Digraph</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/digraphedge.html" class="tsd-kind-icon">Digraph<wbr>Edge</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/dirtypevalue.html" class="tsd-kind-icon">Dir<wbr>Type<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -276,6 +376,9 @@
 						<a href="classes/graphattributes.html" class="tsd-kind-icon">Graph<wbr>Attributes</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/graphedge.html" class="tsd-kind-icon">Graph<wbr>Edge</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -298,6 +401,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/nodeattributes.html" class="tsd-kind-icon">Node<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/outputmodevalue.html" class="tsd-kind-icon">Output<wbr>Mode<wbr>Value</a>
@@ -369,13 +475,28 @@
 						<a href="globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#nodelike" class="tsd-kind-icon">Node<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#nodelikeobject" class="tsd-kind-icon">Node<wbr>Like<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a>
 					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-variable">
 						<a href="globals.html#digraph" class="tsd-kind-icon">digraph</a>
 					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-variable">
 						<a href="globals.html#graph" class="tsd-kind-icon">graph</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
+						<a href="globals.html#builder" class="tsd-kind-icon">builder</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnodelike" class="tsd-kind-icon">is<wbr>Node<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnodelikeobject" class="tsd-kind-icon">is<wbr>Node<wbr>Like<wbr>Object</a>
 					</li>
 				</ul>
 			</nav>
