@@ -90,7 +90,7 @@
 				</a>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { digraph } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
 
-<span class="hljs-keyword">const</span> g = digraph();
+<span class="hljs-keyword">const</span> g = digraph(<span class="hljs-string">'G'</span>);
 
 <span class="hljs-keyword">const</span> subgraphA = g.createSubgraph(<span class="hljs-string">'A'</span>);
 <span class="hljs-keyword">const</span> nodeA1 = subgraphA.createNode(<span class="hljs-string">'A_node1'</span>);
@@ -131,19 +131,19 @@ g.createEdge(node1, node2);
 					<h3>Output</h3>
 				</a>
 				<pre><code class="language-graphviz">digraph G {
-  &quot;node1&quot;;
-  &quot;node2&quot;;
+  node1;
+  node2;
   subgraph A {
-    &quot;A_node1&quot;;
-    &quot;A_node2&quot;;
-    &quot;A_node1&quot; -&gt; &quot;A_node2&quot;;
-    &quot;B_node1&quot; -&gt; &quot;B_node2&quot;;
+    A_node1;
+    A_node2;
+    A_node1 -&gt; A_node2;
+    B_node1 -&gt; B_node2;
   };
   subgraph B {
-    &quot;B_node1&quot;;
-    &quot;B_node2&quot;;
+    B_node1;
+    B_node2;
   };
-  &quot;node1&quot; -&gt; &quot;node2&quot;;
+  node1 -&gt; node2;
 }</code></pre>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
@@ -167,25 +167,7 @@ g.createEdge(node1, node2);
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
-						<a href="classes/arrowtypevalue.html" class="tsd-kind-icon">Arrow<wbr>Type<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/aspecttypevalue.html" class="tsd-kind-icon">Aspect<wbr>Type<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
 						<a href="classes/attributes.html" class="tsd-kind-icon">Attributes</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/boolvalue.html" class="tsd-kind-icon">Bool<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/clusterattributes.html" class="tsd-kind-icon">Cluster<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/clustermodevalue.html" class="tsd-kind-icon">Cluster<wbr>Mode<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/colorvalue.html" class="tsd-kind-icon">Color<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/context.html" class="tsd-kind-icon">Context</a>
@@ -194,121 +176,31 @@ g.createEdge(node1, node2);
 						<a href="classes/digraph.html" class="tsd-kind-icon">Digraph</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/digraphedge.html" class="tsd-kind-icon">Digraph<wbr>Edge</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/dirtypevalue.html" class="tsd-kind-icon">Dir<wbr>Type<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
 						<a href="classes/dotbase.html" class="tsd-kind-icon">Dot<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/doublevalue.html" class="tsd-kind-icon">Double<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/edge.html" class="tsd-kind-icon">Edge</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/edgeattributes.html" class="tsd-kind-icon">Edge<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/escstringvalue.html" class="tsd-kind-icon">Esc<wbr>String<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
 						<a href="classes/graph.html" class="tsd-kind-icon">Graph</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/graphattributes.html" class="tsd-kind-icon">Graph<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/graphedge.html" class="tsd-kind-icon">Graph<wbr>Edge</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/graphvizvalue.html" class="tsd-kind-icon">Graphviz<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/intvalue.html" class="tsd-kind-icon">Int<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/layerlistvalue.html" class="tsd-kind-icon">Layer<wbr>List<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/layerrangevalue.html" class="tsd-kind-icon">Layer<wbr>Range<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/lblstringvalue.html" class="tsd-kind-icon">Lbl<wbr>String<wbr>Value</a>
+						<a href="classes/literal.html" class="tsd-kind-icon">Literal</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/node.html" class="tsd-kind-icon">Node</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/nodeattributes.html" class="tsd-kind-icon">Node<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-class">
 						<a href="classes/nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/outputmodevalue.html" class="tsd-kind-icon">Output<wbr>Mode<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/packmodevalue.html" class="tsd-kind-icon">Pack<wbr>Mode<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/pagedirvalue.html" class="tsd-kind-icon">Pagedir<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/pointvalue.html" class="tsd-kind-icon">Point<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/pointflistvalue.html" class="tsd-kind-icon">Pointf<wbr>List<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/pointfvalue.html" class="tsd-kind-icon">Pointf<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/portposvalue.html" class="tsd-kind-icon">Port<wbr>Pos<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/quadtypevalue.html" class="tsd-kind-icon">Quad<wbr>Type<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/ranktypevalue.html" class="tsd-kind-icon">Rank<wbr>Type<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/rankdirvalue.html" class="tsd-kind-icon">Rankdir<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/rectvalue.html" class="tsd-kind-icon">Rect<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/shapevalue.html" class="tsd-kind-icon">Shape<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/smoothtypevalue.html" class="tsd-kind-icon">Smooth<wbr>Type<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/starttypevalue.html" class="tsd-kind-icon">Start<wbr>Type<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/stringvalue.html" class="tsd-kind-icon">String<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/stylevalue.html" class="tsd-kind-icon">Style<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-class">
 						<a href="classes/subgraph.html" class="tsd-kind-icon">Subgraph</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/subgraphattributes.html" class="tsd-kind-icon">Subgraph<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/viewportvalue.html" class="tsd-kind-icon">View<wbr>Port<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/icontext.html" class="tsd-kind-icon">IContext</a>
@@ -316,14 +208,14 @@ g.createEdge(node1, node2);
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/idot.html" class="tsd-kind-icon">IDot</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iedgetarget.html" class="tsd-kind-icon">IEdge<wbr>Target</a>
+					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#nodelike" class="tsd-kind-icon">Node<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#nodelikeobject" class="tsd-kind-icon">Node<wbr>Like<wbr>Object</a>
+						<a href="globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a>
@@ -336,12 +228,6 @@ g.createEdge(node1, node2);
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
 						<a href="globals.html#builder" class="tsd-kind-icon">builder</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#isnodelike" class="tsd-kind-icon">is<wbr>Node<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#isnodelikeobject" class="tsd-kind-icon">is<wbr>Node<wbr>Like<wbr>Object</a>
 					</li>
 				</ul>
 			</nav>
