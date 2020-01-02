@@ -69,19 +69,33 @@
 					<h1>ts-graphviz</h1>
 				</a>
 				<p><a href="https://graphviz.gitlab.io/">Graphviz</a> library for TypeScript.</p>
+				<a href="#key-feature" id="key-feature" style="color: inherit; text-decoration: none;">
+					<h2>Key Feature</h2>
+				</a>
+				<ul>
+					<li>Export Dot language.</li>
+					<li>Support Node.js and Browser.<ul>
+							<li>UMD, ESM, CommonJS</li>
+						</ul>
+					</li>
+					<li>No dependency.</li>
+				</ul>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
 				<p>The plugin can then be installed using <a href="https://www.npmjs.com/">npm</a>:</p>
 				<p><a href="https://nodei.co/npm/ts-graphviz/"><img src="https://nodei.co/npm/ts-graphviz.png" alt="NPM"></a></p>
-				<a href="#yarn" id="yarn" style="color: inherit; text-decoration: none;">
-					<h3>yarn</h3>
+				<a href="#package-manager" id="package-manager" style="color: inherit; text-decoration: none;">
+					<h3>Package manager</h3>
 				</a>
-				<pre><code class="language-bash">yarn add ts-graphviz</code></pre>
-				<a href="#npm" id="npm" style="color: inherit; text-decoration: none;">
-					<h3>npm</h3>
+				<pre><code class="language-bash"><span class="hljs-comment"># yarn</span>
+yarn add ts-graphviz
+<span class="hljs-comment"># or npm</span>
+npm install ts-graphviz</code></pre>
+				<a href="#browser" id="browser" style="color: inherit; text-decoration: none;">
+					<h3>Browser</h3>
 				</a>
-				<pre><code class="language-bash">npm install ts-graphviz</code></pre>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//unpkg.com/ts-graphviz/lib/bundle.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
@@ -145,6 +159,20 @@ g.createEdge(node1, node2);
   };
   node1 -&gt; node2;
 }</code></pre>
+				<a href="#see-also" id="see-also" style="color: inherit; text-decoration: none;">
+					<h2>See Also</h2>
+				</a>
+				<p>Graphviz-dot Test and Integration</p>
+				<ul>
+					<li><a href="https://github.com/kamiazya/jest-graphviz">jest-graphviz</a><ul>
+							<li>Jest matchers that supports graphviz integration.</li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/kamiazya/setup-graphviz">setup-graphviz</a><ul>
+							<li>GitHub Action to set up Graphviz cross-platform(Linux, macOS, Windows).</li>
+						</ul>
+					</li>
+				</ul>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>
