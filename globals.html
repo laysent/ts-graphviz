@@ -67,10 +67,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Modules</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-module tsd-is-not-exported"><a href="modules/compass.html" class="tsd-kind-icon">Compass</a></li>
+								<li class="tsd-kind-module"><a href="modules/clustertype.html" class="tsd-kind-icon">Cluster<wbr>Type</a></li>
+								<li class="tsd-kind-module"><a href="modules/compass.html" class="tsd-kind-icon">Compass</a></li>
+								<li class="tsd-kind-module"><a href="modules/rootclustertype.html" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -80,6 +82,7 @@
 								<li class="tsd-kind-class"><a href="classes/edge.html" class="tsd-kind-icon">Edge</a></li>
 								<li class="tsd-kind-class"><a href="classes/graph.html" class="tsd-kind-icon">Graph</a></li>
 								<li class="tsd-kind-class"><a href="classes/node.html" class="tsd-kind-icon">Node</a></li>
+								<li class="tsd-kind-class"><a href="classes/nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a></li>
 								<li class="tsd-kind-class"><a href="classes/subgraph.html" class="tsd-kind-icon">Subgraph</a></li>
 							</ul>
 							<h3>Base Classes</h3>
@@ -91,14 +94,13 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class"><a href="classes/attributes.html" class="tsd-kind-icon">Attributes</a></li>
 							</ul>
-							<h3>Literal Classes</h3>
+							<h3>Internal Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class"><a href="classes/literal.html" class="tsd-kind-icon">Literal</a></li>
+								<li class="tsd-kind-class"><a href="classes/id.html" class="tsd-kind-icon">ID</a></li>
 							</ul>
 							<h3>Other Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class"><a href="classes/context.html" class="tsd-kind-icon">Context</a></li>
-								<li class="tsd-kind-class"><a href="classes/nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a></li>
 								<li class="tsd-kind-class"><a href="classes/rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a></li>
 							</ul>
 						</section>
@@ -114,9 +116,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias"><a href="globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a></li>
-								<li class="tsd-kind-type-alias"><a href="globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -129,7 +129,6 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-not-exported"><a href="globals.html#builder" class="tsd-kind-icon">builder</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#iscompass" class="tsd-kind-icon">is<wbr>Compass</a></li>
 							</ul>
 						</section>
@@ -145,34 +144,19 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="clustertype" class="tsd-anchor"></a>
-					<h3>Cluster<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">Cluster<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="globals.html#rootclustertype" class="tsd-signature-type">RootClusterType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"subgraph"</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L14">model/cluster/Cluster.ts:14</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="edgetargetlike" class="tsd-anchor"></a>
 					<h3>Edge<wbr>Target<wbr>Like</h3>
 					<div class="tsd-signature tsd-kind-icon">Edge<wbr>Target<wbr>Like<span class="tsd-signature-symbol">:</span> <a href="interfaces/iedgetarget.html" class="tsd-signature-type">IEdgeTarget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Node.ts#L77">model/Node.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Node.ts#L76">model/Node.ts:76</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="rootclustertype" class="tsd-anchor"></a>
-					<h3>Root<wbr>Cluster<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">Root<wbr>Cluster<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"digraph"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"graph"</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L12">model/cluster/Cluster.ts:12</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>string or an object implementing IEdgeTarget.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -183,9 +167,14 @@
 					<div class="tsd-signature tsd-kind-icon">digraph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;builder(Digraph)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/usecase.ts#L18">usecase.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/usecase.ts#L20">usecase.ts:20</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>API for creating directional graph objects.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="graph" class="tsd-anchor"></a>
@@ -193,45 +182,18 @@
 					<div class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;builder(Graph)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/usecase.ts#L20">usecase.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/usecase.ts#L23">usecase.ts:23</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>API for creating omnidirectional graph objects.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
-					<a name="builder" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> builder</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">builder&lt;G&gt;<span class="tsd-signature-symbol">(</span>cls<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Type</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, strictMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/usecase.ts#L4">usecase.ts:4</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>G<span class="tsd-signature-symbol">: </span><a href="classes/rootcluster.html" class="tsd-signature-type">RootCluster</a></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>cls: <span class="tsd-signature-type">Type</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> strictMode: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="iscompass" class="tsd-anchor"></a>
 					<h3>is<wbr>Compass</h3>
@@ -242,9 +204,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Node.ts#L22">model/Node.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/common/type.ts#L75">common/type.ts:75</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determine whether the character string satisfies the Compass condition.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -264,18 +231,28 @@
 					<div class="tsd-signature tsd-kind-icon">strict<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/usecase.ts#L22">usecase.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/usecase.ts#L26">usecase.ts:26</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Provides a strict mode API.</p>
+						</div>
+					</div>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="strict.digraph" class="tsd-anchor"></a>
 						<h3>digraph</h3>
 						<div class="tsd-signature tsd-kind-icon">digraph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;builder(Digraph, true)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/usecase.ts#L23">usecase.ts:23</a></li>
+								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/usecase.ts#L28">usecase.ts:28</a></li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>API for creating directional graph objects in strict mode.</p>
+							</div>
+						</div>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="strict.graph" class="tsd-anchor"></a>
@@ -283,9 +260,14 @@
 						<div class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;builder(Graph, true)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/usecase.ts#L24">usecase.ts:24</a></li>
+								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/usecase.ts#L30">usecase.ts:30</a></li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>API for creating omnidirectional graph objects in strict mode.</p>
+							</div>
+						</div>
 					</section>
 				</section>
 			</section>
@@ -296,8 +278,14 @@
 					<li class="globals current ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-module">
+						<a href="modules/clustertype.html">Cluster<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/compass.html">Compass</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/rootclustertype.html">Root<wbr>Cluster<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>
@@ -325,7 +313,7 @@
 						<a href="classes/graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/literal.html" class="tsd-kind-icon">Literal</a>
+						<a href="classes/id.html" class="tsd-kind-icon">ID</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/node.html" class="tsd-kind-icon">Node</a>
@@ -352,22 +340,13 @@
 						<a href="interfaces/iport.html" class="tsd-kind-icon">IPort</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#digraph" class="tsd-kind-icon">digraph</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#graph" class="tsd-kind-icon">graph</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
-						<a href="globals.html#builder" class="tsd-kind-icon">builder</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#iscompass" class="tsd-kind-icon">is<wbr>Compass</a>

@@ -68,6 +68,9 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Subgraph object.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -136,7 +139,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="subgraph.html#removenode" class="tsd-kind-icon">remove<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="subgraph.html#removesubgraph" class="tsd-kind-icon">remove<wbr>Subgraph</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="subgraph.html#subgraph-1" class="tsd-kind-icon">subgraph</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="subgraph.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="subgraph.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -160,7 +163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L225">model/cluster/Cluster.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L351">model/cluster/Cluster.ts:351</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,9 +186,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Cluster.comment</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L28">model/cluster/Cluster.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L39">model/cluster/Cluster.ts:39</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Comments to include when outputting with toDot.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="context" class="tsd-anchor"></a>
@@ -194,20 +202,25 @@
 					<aside class="tsd-sources">
 						<p>Overrides Cluster.context</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L226">model/cluster/Cluster.ts:226</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L352">model/cluster/Cluster.ts:352</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../globals.html#clustertype" class="tsd-signature-type">ClusterType</a><span class="tsd-signature-symbol"> =&nbsp;&quot;subgraph&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"digraph"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"graph"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"subgraph"</span><span class="tsd-signature-symbol"> =&nbsp;ClusterType.subgraph</span></div>
 					<aside class="tsd-sources">
 						<p>Overrides Cluster.type</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L225">model/cluster/Cluster.ts:225</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L351">model/cluster/Cluster.ts:351</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates the type of cluster.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
@@ -224,9 +237,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.id</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L29">model/cluster/Cluster.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L31">model/cluster/Cluster.ts:31</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cluster ID</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
@@ -236,9 +254,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.id</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L33">model/cluster/Cluster.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L35">model/cluster/Cluster.ts:35</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cluster ID</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -263,9 +286,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.add</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L52">model/cluster/Cluster.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L78">model/cluster/Cluster.ts:78</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add Node, Edge and Subgraph to the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -287,9 +315,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.addEdge</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L66">model/cluster/Cluster.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L98">model/cluster/Cluster.ts:98</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add Edge to the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -311,9 +344,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.addNode</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L62">model/cluster/Cluster.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L91">model/cluster/Cluster.ts:91</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a Node to the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -335,9 +373,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.addSubgraph</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L70">model/cluster/Cluster.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L105">model/cluster/Cluster.ts:105</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a Subgraph to the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -360,9 +403,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.createEdge</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L128">model/cluster/Cluster.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L202">model/cluster/Cluster.ts:202</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create Edge and add it to the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -378,7 +426,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.createEdge</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L129">model/cluster/Cluster.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L203">model/cluster/Cluster.ts:203</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -402,9 +450,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.createNode</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L114">model/cluster/Cluster.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L176">model/cluster/Cluster.ts:176</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a Node in the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -419,20 +472,25 @@
 					<a name="createsubgraph" class="tsd-anchor"></a>
 					<h3>create<wbr>Subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="subgraph.html" class="tsd-signature-type">Subgraph</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="subgraph.html" class="tsd-signature-type">Subgraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.createSubgraph</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L86">model/cluster/Cluster.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L133">model/cluster/Cluster.ts:133</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a Subgraph and add it to the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="subgraph.html" class="tsd-signature-type">Subgraph</a></h4>
@@ -443,23 +501,34 @@
 					<a name="edge" class="tsd-anchor"></a>
 					<h3>edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="edge.html" class="tsd-signature-type">Edge</a></li>
+						<li class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="edge.html" class="tsd-signature-type">Edge</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.edge</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L163">model/cluster/Cluster.ts:163</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L263">model/cluster/Cluster.ts:263</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Declarative API for Edge.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nodes: <a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>targets: <a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Edges.</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Callback to operate Edge.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="edge.html" class="tsd-signature-type">Edge</a></h4>
@@ -477,9 +546,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.existEdge</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L78">model/cluster/Cluster.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L119">model/cluster/Cluster.ts:119</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if the Edge exists in the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -501,9 +575,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.existNode</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L74">model/cluster/Cluster.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L112">model/cluster/Cluster.ts:112</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if the Node exists in the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -525,9 +604,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.existSubgraph</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L82">model/cluster/Cluster.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L126">model/cluster/Cluster.ts:126</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if the Subgraph exists in the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -549,9 +633,19 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.getNode</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L124">model/cluster/Cluster.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L197">model/cluster/Cluster.ts:197</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get Node in cluster by specifying id.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>If there is no Node with the specified id in the cluster, return undefined.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -576,9 +670,15 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.getSubgraph</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L120">model/cluster/Cluster.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L187">model/cluster/Cluster.ts:187</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get Subgraph in cluster by specifying id.</p>
+								</div>
+								<p>If there is no Subgraph with the specified id in the cluster, return undefined.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -602,9 +702,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L229">model/cluster/Cluster.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L356">model/cluster/Cluster.ts:356</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether the Subgraph is a SubgraphCluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -620,16 +725,33 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.node</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L155">model/cluster/Cluster.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L249">model/cluster/Cluster.ts:249</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Declarative API for Node.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>If there is a Node with the given ID, use it.
+										If not, create a Node.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Node ID.</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Callback to operate Node.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="node.html" class="tsd-signature-type">Node</a></h4>
@@ -647,9 +769,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.remove</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L92">model/cluster/Cluster.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L142">model/cluster/Cluster.ts:142</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove Node, Edge and Subgraph from the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -671,9 +798,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.removeEdge</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L106">model/cluster/Cluster.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L162">model/cluster/Cluster.ts:162</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove Edge from the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -695,9 +827,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.removeNode</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L102">model/cluster/Cluster.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L155">model/cluster/Cluster.ts:155</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove Node from the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -719,9 +856,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.removeSubgraph</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L110">model/cluster/Cluster.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L169">model/cluster/Cluster.ts:169</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove Subgraph from the cluster.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -736,44 +878,67 @@
 					<a name="subgraph-1" class="tsd-anchor"></a>
 					<h3>subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="subgraph.html" class="tsd-signature-type">Subgraph</a></li>
+						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="subgraph.html" class="tsd-signature-type">Subgraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Cluster.subgraph</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L147">model/cluster/Cluster.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L231">model/cluster/Cluster.ts:231</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Declarative API for Subgraph.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>If there is a Subgraph with the given ID, use it.
+										If not, create a Subgraph.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Subgraph ID.</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Callback to operate Subgraph.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="subgraph.html" class="tsd-signature-type">Subgraph</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="todot" class="tsd-anchor"></a>
 					<h3>to<wbr>Dot</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">to<wbr>Dot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/idot.html">IDot</a>.<a href="../interfaces/idot.html#todot">toDot</a></p>
-								<p>Overrides Cluster.toDot</p>
+								<p>Inherited from Cluster.toDot</p>
+								<p>Overrides <a href="dotbase.html">DotBase</a>.<a href="dotbase.html#todot">toDot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L235">model/cluster/Cluster.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L272">model/cluster/Cluster.ts:272</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Cluster to Dot language.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -788,16 +953,21 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Cluster.attributes</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L38">model/cluster/Cluster.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L45">model/cluster/Cluster.ts:45</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Common attributes of objects in the cluster.</p>
+						</div>
+					</div>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="attributes.edge-1" class="tsd-anchor"></a>
 						<h3>edge</h3>
 						<div class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">:</span> <a href="attributes.html" class="tsd-signature-type">Attributes</a><span class="tsd-signature-symbol"> =&nbsp;new Attributes()</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L40">model/cluster/Cluster.ts:40</a></li>
+								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L47">model/cluster/Cluster.ts:47</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -807,7 +977,7 @@
 						<div class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">:</span> <a href="attributes.html" class="tsd-signature-type">Attributes</a><span class="tsd-signature-symbol"> =&nbsp;new Attributes()</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L39">model/cluster/Cluster.ts:39</a></li>
+								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L46">model/cluster/Cluster.ts:46</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -817,7 +987,7 @@
 						<div class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">:</span> <a href="attributes.html" class="tsd-signature-type">Attributes</a><span class="tsd-signature-symbol"> =&nbsp;new Attributes()</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/cluster/Cluster.ts#L41">model/cluster/Cluster.ts:41</a></li>
+								<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/cluster/Cluster.ts#L48">model/cluster/Cluster.ts:48</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -856,7 +1026,7 @@
 						<a href="graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="literal.html" class="tsd-kind-icon">Literal</a>
+						<a href="id.html" class="tsd-kind-icon">ID</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="node.html" class="tsd-kind-icon">Node</a>
@@ -947,7 +1117,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="subgraph.html#subgraph-1" class="tsd-kind-icon">subgraph</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="subgraph.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
 							</li>
 							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-inherited">
@@ -970,22 +1140,13 @@
 						<a href="../interfaces/iport.html" class="tsd-kind-icon">IPort</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#digraph" class="tsd-kind-icon">digraph</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#graph" class="tsd-kind-icon">graph</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../globals.html#builder" class="tsd-kind-icon">builder</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="../globals.html#iscompass" class="tsd-kind-icon">is<wbr>Compass</a>

@@ -102,10 +102,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="edge.html#attributes" class="tsd-kind-icon">attributes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="edge.html#comment" class="tsd-kind-icon">comment</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="edge.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="edge.html#targets" class="tsd-kind-icon">targets</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -130,7 +128,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Edge.ts#L15">model/Edge.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Edge.ts#L26">model/Edge.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -150,7 +148,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Edge.ts#L17">model/Edge.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Edge.ts#L28">model/Edge.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -170,24 +168,19 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="attributes" class="tsd-anchor"></a>
-					<h3>attributes</h3>
-					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <a href="attributes.html" class="tsd-signature-type">Attributes</a><span class="tsd-signature-symbol"> =&nbsp;new Attributes()</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Edge.ts#L14">model/Edge.ts:14</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="comment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> comment</h3>
 					<div class="tsd-signature tsd-kind-icon">comment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Edge.ts#L12">model/Edge.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Edge.ts#L12">model/Edge.ts:12</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Comments to include when outputting with toDot.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="context" class="tsd-anchor"></a>
@@ -195,17 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/icontext.html" class="tsd-signature-type">IContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Edge.ts#L19">model/Edge.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="targets" class="tsd-anchor"></a>
-					<h3>targets</h3>
-					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iedgetarget.html" class="tsd-signature-type">IEdgeTarget</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Edge.ts#L15">model/Edge.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Edge.ts#L30">model/Edge.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,9 +207,14 @@
 								<p>Implementation of <a href="../interfaces/idot.html">IDot</a>.<a href="../interfaces/idot.html#todot">toDot</a></p>
 								<p>Overrides <a href="dotbase.html">DotBase</a>.<a href="dotbase.html#todot">toDot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Edge.ts#L24">model/Edge.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Edge.ts#L36">model/Edge.ts:36</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Edge to Dot language.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -264,16 +252,10 @@
 								<a href="edge.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="edge.html#attributes" class="tsd-kind-icon">attributes</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="edge.html#comment" class="tsd-kind-icon">comment</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="edge.html#context" class="tsd-kind-icon">context</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="edge.html#targets" class="tsd-kind-icon">targets</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="edge.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
@@ -289,7 +271,7 @@
 						<a href="graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="literal.html" class="tsd-kind-icon">Literal</a>
+						<a href="id.html" class="tsd-kind-icon">ID</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="node.html" class="tsd-kind-icon">Node</a>
@@ -316,22 +298,13 @@
 						<a href="../interfaces/iport.html" class="tsd-kind-icon">IPort</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#digraph" class="tsd-kind-icon">digraph</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#graph" class="tsd-kind-icon">graph</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../globals.html#builder" class="tsd-kind-icon">builder</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="../globals.html#iscompass" class="tsd-kind-icon">is<wbr>Compass</a>

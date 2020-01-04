@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Literal | ts-graphviz - v0.5.0</title>
+	<title>ID | ts-graphviz - v0.5.0</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="literal.html">Literal</a>
+					<a href="id.html">ID</a>
 				</li>
 			</ul>
-			<h1>Class Literal</h1>
+			<h1>Class ID</h1>
 		</div>
 	</div>
 </header>
@@ -68,6 +68,21 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>An ID is just a value.
+						Designed as an immutable object.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>description</dt>
+						<dd><p>An ID is one of the following:</p>
+							<ul>
+								<li>Any string of alphabetic ([a-zA-Z\200-\377]) characters, underscores (&#39;_&#39;) or digits ([0-9]), not beginning with a digit;</li>
+								<li>a numeral [-]?(.[0-9]+ | [0-9]+(.[0-9]*)? );</li>
+								<li>any double-quoted string (&quot;...&quot;) possibly containing escaped quotes (&quot;)1;</li>
+								<li>an HTML string (&lt;...&gt;).</li>
+							</ul>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -77,7 +92,7 @@
 						<a href="dotbase.html" class="tsd-signature-type">DotBase</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Literal</span>
+								<span class="target">ID</span>
 							</li>
 						</ul>
 					</li>
@@ -96,22 +111,19 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="literal.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="id.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="literal.html#ishtmllike" class="tsd-kind-icon">isHTMLLike</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="literal.html#isnotstring" class="tsd-kind-icon">is<wbr>Not<wbr>String</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="literal.html#isquoterequired" class="tsd-kind-icon">is<wbr>Quote<wbr>Required</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="literal.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="id.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="literal.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="id.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,13 +135,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Literal<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="literal.html" class="tsd-signature-type">Literal</a></li>
+						<li class="tsd-signature tsd-kind-icon">new ID<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="id.html" class="tsd-signature-type">ID</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Literal.ts#L12">model/Literal.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/ID.ts#L26">model/ID.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -138,50 +150,20 @@
 									<h5>value: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="literal.html" class="tsd-signature-type">Literal</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="id.html" class="tsd-signature-type">ID</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="ishtmllike" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> isHTMLLike</h3>
-					<div class="tsd-signature tsd-kind-icon">isHTMLLike<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Literal.ts#L10">model/Literal.ts:10</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="isnotstring" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Not<wbr>String</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Not<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Literal.ts#L11">model/Literal.ts:11</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="isquoterequired" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Quote<wbr>Required</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Quote<wbr>Required<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Literal.ts#L12">model/Literal.ts:12</a></li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="value" class="tsd-anchor"></a>
 					<h3>value</h3>
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Literal.ts#L8">model/Literal.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/ID.ts#L18">model/ID.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,9 +182,14 @@
 								<p>Implementation of <a href="../interfaces/idot.html">IDot</a>.<a href="../interfaces/idot.html#todot">toDot</a></p>
 								<p>Overrides <a href="dotbase.html">DotBase</a>.<a href="dotbase.html#todot">toDot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/9c13a3f/src/model/Literal.ts#L33">model/Literal.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/ID.ts#L51">model/ID.ts:51</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether quotes are required or HTML-Like labels and returns an appropriate string.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -243,25 +230,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="literal.html" class="tsd-kind-icon">Literal</a>
+						<a href="id.html" class="tsd-kind-icon">ID</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="literal.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="literal.html#ishtmllike" class="tsd-kind-icon">isHTMLLike</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="literal.html#isnotstring" class="tsd-kind-icon">is<wbr>Not<wbr>String</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="literal.html#isquoterequired" class="tsd-kind-icon">is<wbr>Quote<wbr>Required</a>
+								<a href="id.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="literal.html#value" class="tsd-kind-icon">value</a>
+								<a href="id.html#value" class="tsd-kind-icon">value</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="literal.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
+								<a href="id.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
 							</li>
 						</ul>
 					</li>
@@ -292,22 +270,13 @@
 						<a href="../interfaces/iport.html" class="tsd-kind-icon">IPort</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#clustertype" class="tsd-kind-icon">Cluster<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#rootclustertype" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#digraph" class="tsd-kind-icon">digraph</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#graph" class="tsd-kind-icon">graph</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../globals.html#builder" class="tsd-kind-icon">builder</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="../globals.html#iscompass" class="tsd-kind-icon">is<wbr>Compass</a>

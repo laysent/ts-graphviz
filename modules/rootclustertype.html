@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Context | ts-graphviz - v0.5.0</title>
+	<title>RootClusterType | ts-graphviz - v0.5.0</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="context.html">Context</a>
+					<a href="rootclustertype.html">RootClusterType</a>
 				</li>
 			</ul>
-			<h1>Class Context</h1>
+			<h1>Module RootClusterType</h1>
 		</div>
 	</div>
 </header>
@@ -69,124 +69,61 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Graph context object.</p>
+						<p>Root cluster type.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>description</dt>
+						<dd><p>digraph&quot; if you want to use a directional graph.</p>
+							<p>&quot;graph&quot; if you want to use an omnidirectional graph.</p>
+						</dd>
+					</dl>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Context</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/icontext.html" class="tsd-signature-type">IContext</a></li>
-				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="context.html#root" class="tsd-kind-icon">root</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="context.html#graphtype" class="tsd-kind-icon">graph<wbr>Type</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="context.html#createsubgraph" class="tsd-kind-icon">create<wbr>Subgraph</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="rootclustertype.html#digraph" class="tsd-kind-icon">digraph</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="rootclustertype.html#graph" class="tsd-kind-icon">graph</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="root" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> root</h3>
-					<div class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">:</span> <a href="rootcluster.html" class="tsd-signature-type">RootCluster</a></div>
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="digraph" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> digraph</h3>
+					<div class="tsd-signature tsd-kind-icon">digraph<span class="tsd-signature-symbol">:</span> <a href="rootclustertype.html" class="tsd-signature-type">RootClusterType</a><span class="tsd-signature-symbol"> =&nbsp;&quot;digraph&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Context.ts#L23">model/Context.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/common/type.ts#L16">common/type.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Root graph.</p>
+							<p>A directional graph type.</p>
 						</div>
 					</div>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="graphtype" class="tsd-anchor"></a>
-					<h3>graph<wbr>Type</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> graphType<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/rootclustertype.html" class="tsd-signature-type">RootClusterType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Context.ts#L19">model/Context.ts:19</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Graph type.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/rootclustertype.html" class="tsd-signature-type">RootClusterType</a>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="createsubgraph" class="tsd-anchor"></a>
-					<h3>create<wbr>Subgraph</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="subgraph.html" class="tsd-signature-type">Subgraph</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/model/Context.ts#L26">model/Context.ts:26</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a subgraph.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="subgraph.html" class="tsd-signature-type">Subgraph</a></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="graph" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> graph</h3>
+					<div class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">:</span> <a href="rootclustertype.html" class="tsd-signature-type">RootClusterType</a><span class="tsd-signature-symbol"> =&nbsp;&quot;graph&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/e6eec9d/src/common/type.ts#L20">common/type.ts:20</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An omnidirectional graph type.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -196,87 +133,24 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="clustertype.html">Cluster<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="compass.html">Compass</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="rootclustertype.html">Root<wbr>Cluster<wbr>Type</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class">
-						<a href="attributes.html" class="tsd-kind-icon">Attributes</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="rootclustertype.html#digraph" class="tsd-kind-icon">digraph</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class">
-						<a href="context.html" class="tsd-kind-icon">Context</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="context.html#root" class="tsd-kind-icon">root</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="context.html#graphtype" class="tsd-kind-icon">graph<wbr>Type</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="context.html#createsubgraph" class="tsd-kind-icon">create<wbr>Subgraph</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-class">
-						<a href="digraph.html" class="tsd-kind-icon">Digraph</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="dotbase.html" class="tsd-kind-icon">Dot<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="edge.html" class="tsd-kind-icon">Edge</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="graph.html" class="tsd-kind-icon">Graph</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="id.html" class="tsd-kind-icon">ID</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="node.html" class="tsd-kind-icon">Node</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="subgraph.html" class="tsd-kind-icon">Subgraph</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/icontext.html" class="tsd-kind-icon">IContext</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/idot.html" class="tsd-kind-icon">IDot</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iedgetarget.html" class="tsd-kind-icon">IEdge<wbr>Target</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="../interfaces/iport.html" class="tsd-kind-icon">IPort</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="../globals.html#digraph" class="tsd-kind-icon">digraph</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="../globals.html#graph" class="tsd-kind-icon">graph</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="../globals.html#iscompass" class="tsd-kind-icon">is<wbr>Compass</a>
-					</li>
-					<li class=" tsd-kind-object-literal">
-						<a href="../globals.html#strict" class="tsd-kind-icon">strict</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="rootclustertype.html#graph" class="tsd-kind-icon">graph</a>
 					</li>
 				</ul>
 			</nav>
