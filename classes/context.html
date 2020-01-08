@@ -106,6 +106,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="context.html#createattributes" class="tsd-kind-icon">create<wbr>Attributes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="context.html#createedge" class="tsd-kind-icon">create<wbr>Edge</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="context.html#createnode" class="tsd-kind-icon">create<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="context.html#createsubgraph" class="tsd-kind-icon">create<wbr>Subgraph</a></li>
 							</ul>
 						</section>
@@ -119,8 +122,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> root</h3>
 					<div class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">:</span> <a href="rootcluster.html" class="tsd-signature-type">RootCluster</a></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/icontext.html">IContext</a>.<a href="../interfaces/icontext.html#root">root</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Context.ts#L23">model/Context.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Context.ts#L17">model/Context.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,7 +146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Context.ts#L19">model/Context.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Context.ts#L13">model/Context.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -161,6 +165,112 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createattributes" class="tsd-anchor"></a>
+					<h3>create<wbr>Attributes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Attributes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="attributes.html" class="tsd-signature-type">Attributes</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/icontext.html">IContext</a>.<a href="../interfaces/icontext.html#createattributes">createAttributes</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Context.ts#L29">model/Context.ts:29</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a Attributes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="attributes.html" class="tsd-signature-type">Attributes</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createedge" class="tsd-anchor"></a>
+					<h3>create<wbr>Edge</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Edge<span class="tsd-signature-symbol">(</span>cluster<span class="tsd-signature-symbol">: </span><a href="../interfaces/icluster.html" class="tsd-signature-type">ICluster</a>, target1<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a>, target2<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="edge.html" class="tsd-signature-type">Edge</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Edge<span class="tsd-signature-symbol">(</span>cluster<span class="tsd-signature-symbol">: </span><a href="../interfaces/icluster.html" class="tsd-signature-type">ICluster</a>, <span class="tsd-signature-symbol">...</span>targets<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="edge.html" class="tsd-signature-type">Edge</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/icontext.html">IContext</a>.<a href="../interfaces/icontext.html#createedge">createEdge</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Context.ts#L43">model/Context.ts:43</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a Edge.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cluster: <a href="../interfaces/icluster.html" class="tsd-signature-type">ICluster</a></h5>
+								</li>
+								<li>
+									<h5>target1: <a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a></h5>
+								</li>
+								<li>
+									<h5>target2: <a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="edge.html" class="tsd-signature-type">Edge</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/icontext.html">IContext</a>.<a href="../interfaces/icontext.html#createedge">createEdge</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Context.ts#L44">model/Context.ts:44</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cluster: <a href="../interfaces/icluster.html" class="tsd-signature-type">ICluster</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>targets: <a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="edge.html" class="tsd-signature-type">Edge</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createnode" class="tsd-anchor"></a>
+					<h3>create<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="node.html" class="tsd-signature-type">Node</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/icontext.html">IContext</a>.<a href="../interfaces/icontext.html#createnode">createNode</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Context.ts#L36">model/Context.ts:36</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a Node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="node.html" class="tsd-signature-type">Node</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="createsubgraph" class="tsd-anchor"></a>
 					<h3>create<wbr>Subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -169,8 +279,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/icontext.html">IContext</a>.<a href="../interfaces/icontext.html#createsubgraph">createSubgraph</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Context.ts#L26">model/Context.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Context.ts#L20">model/Context.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -215,6 +326,15 @@
 								<a href="context.html#graphtype" class="tsd-kind-icon">graph<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="context.html#createattributes" class="tsd-kind-icon">create<wbr>Attributes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="context.html#createedge" class="tsd-kind-icon">create<wbr>Edge</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="context.html#createnode" class="tsd-kind-icon">create<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="context.html#createsubgraph" class="tsd-kind-icon">create<wbr>Subgraph</a>
 							</li>
 						</ul>
@@ -252,16 +372,49 @@
 						<a href="subgraph.html" class="tsd-kind-icon">Subgraph</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iattributes.html" class="tsd-kind-icon">IAttributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iattributesbase.html" class="tsd-kind-icon">IAttributes<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icluster.html" class="tsd-kind-icon">ICluster</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/icontext.html" class="tsd-kind-icon">IContext</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/idot.html" class="tsd-kind-icon">IDot</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iedge.html" class="tsd-kind-icon">IEdge</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iedgetarget.html" class="tsd-kind-icon">IEdge<wbr>Target</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ihasattributes.html" class="tsd-kind-icon">IHas<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ihascomment.html" class="tsd-kind-icon">IHas<wbr>Comment</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iid.html" class="tsd-kind-icon">IID</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/inode.html" class="tsd-kind-icon">INode</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/inodewithport.html" class="tsd-kind-icon">INode<wbr>With<wbr>Port</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iport.html" class="tsd-kind-icon">IPort</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/irootcluster.html" class="tsd-kind-icon">IRoot<wbr>Cluster</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/isubgraph.html" class="tsd-kind-icon">ISubgraph</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
@@ -271,9 +424,6 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#graph" class="tsd-kind-icon">graph</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="../globals.html#iscompass" class="tsd-kind-icon">is<wbr>Compass</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="../globals.html#strict" class="tsd-kind-icon">strict</a>

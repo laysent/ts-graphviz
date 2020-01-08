@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GraphvizObject | ts-graphviz - v0.6.0</title>
+	<title>IEdge | ts-graphviz - v0.6.0</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,35 +56,105 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="graphvizobject.html">GraphvizObject</a>
+					<a href="iedge.html">IEdge</a>
 				</li>
 			</ul>
-			<h1>Class GraphvizObject</h1>
+			<h1>Interface IEdge</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Classes implemented in the &#39;ts-graphviz&#39; library are designed to inherit from this class.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">GraphvizObject</span>
+						<a href="idot.html" class="tsd-signature-type">IDot</a>
+					</li>
+					<li>
+						<a href="ihascomment.html" class="tsd-signature-type">IHasComment</a>
+					</li>
+					<li>
+						<a href="ihasattributes.html" class="tsd-signature-type">IHasAttributes</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="dotbase.html" class="tsd-signature-type">DotBase</a>
+								<span class="target">IEdge</span>
 							</li>
 						</ul>
 					</li>
 				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iedge.html#attributes" class="tsd-kind-icon">attributes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iedge.html#comment" class="tsd-kind-icon">comment</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="iedge.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="attributes" class="tsd-anchor"></a>
+					<h3>attributes</h3>
+					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <a href="iattributes.html" class="tsd-signature-type">IAttributes</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="ihasattributes.html">IHasAttributes</a>.<a href="ihasattributes.html#attributes">attributes</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/types.ts#L126">types.ts:126</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="comment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> comment</h3>
+					<div class="tsd-signature tsd-kind-icon">comment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="ihascomment.html">IHasComment</a>.<a href="ihascomment.html#comment">comment</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/types.ts#L122">types.ts:122</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Comments to include when outputting with toDot.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="todot" class="tsd-anchor"></a>
+					<h3>to<wbr>Dot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Dot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="idot.html">IDot</a>.<a href="idot.html#todot">toDot</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/types.ts#L105">types.ts:105</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -98,89 +168,100 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
-						<a href="attributes.html" class="tsd-kind-icon">Attributes</a>
+						<a href="../classes/attributes.html" class="tsd-kind-icon">Attributes</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="context.html" class="tsd-kind-icon">Context</a>
+						<a href="../classes/context.html" class="tsd-kind-icon">Context</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="digraph.html" class="tsd-kind-icon">Digraph</a>
+						<a href="../classes/digraph.html" class="tsd-kind-icon">Digraph</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="dotbase.html" class="tsd-kind-icon">Dot<wbr>Base</a>
+						<a href="../classes/dotbase.html" class="tsd-kind-icon">Dot<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="edge.html" class="tsd-kind-icon">Edge</a>
+						<a href="../classes/edge.html" class="tsd-kind-icon">Edge</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="graph.html" class="tsd-kind-icon">Graph</a>
+						<a href="../classes/graph.html" class="tsd-kind-icon">Graph</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/id.html" class="tsd-kind-icon">ID</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/node.html" class="tsd-kind-icon">Node</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/subgraph.html" class="tsd-kind-icon">Subgraph</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iattributes.html" class="tsd-kind-icon">IAttributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iattributesbase.html" class="tsd-kind-icon">IAttributes<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="icluster.html" class="tsd-kind-icon">ICluster</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="icontext.html" class="tsd-kind-icon">IContext</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="idot.html" class="tsd-kind-icon">IDot</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class">
-						<a href="graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
+					<li class="current tsd-kind-interface">
+						<a href="iedge.html" class="tsd-kind-icon">IEdge</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iedge.html#attributes" class="tsd-kind-icon">attributes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iedge.html#comment" class="tsd-kind-icon">comment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iedge.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class">
-						<a href="id.html" class="tsd-kind-icon">ID</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="node.html" class="tsd-kind-icon">Node</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="subgraph.html" class="tsd-kind-icon">Subgraph</a>
+					<li class=" tsd-kind-interface">
+						<a href="iedgetarget.html" class="tsd-kind-icon">IEdge<wbr>Target</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iattributes.html" class="tsd-kind-icon">IAttributes</a>
+						<a href="ihasattributes.html" class="tsd-kind-icon">IHas<wbr>Attributes</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iattributesbase.html" class="tsd-kind-icon">IAttributes<wbr>Base</a>
+						<a href="ihascomment.html" class="tsd-kind-icon">IHas<wbr>Comment</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/icluster.html" class="tsd-kind-icon">ICluster</a>
+						<a href="iid.html" class="tsd-kind-icon">IID</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/icontext.html" class="tsd-kind-icon">IContext</a>
+						<a href="inode.html" class="tsd-kind-icon">INode</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/idot.html" class="tsd-kind-icon">IDot</a>
+						<a href="inodewithport.html" class="tsd-kind-icon">INode<wbr>With<wbr>Port</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iedge.html" class="tsd-kind-icon">IEdge</a>
+						<a href="iport.html" class="tsd-kind-icon">IPort</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iedgetarget.html" class="tsd-kind-icon">IEdge<wbr>Target</a>
+						<a href="irootcluster.html" class="tsd-kind-icon">IRoot<wbr>Cluster</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ihasattributes.html" class="tsd-kind-icon">IHas<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ihascomment.html" class="tsd-kind-icon">IHas<wbr>Comment</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iid.html" class="tsd-kind-icon">IID</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/inode.html" class="tsd-kind-icon">INode</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/inodewithport.html" class="tsd-kind-icon">INode<wbr>With<wbr>Port</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iport.html" class="tsd-kind-icon">IPort</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/irootcluster.html" class="tsd-kind-icon">IRoot<wbr>Cluster</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/isubgraph.html" class="tsd-kind-icon">ISubgraph</a>
+						<a href="isubgraph.html" class="tsd-kind-icon">ISubgraph</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>

@@ -90,7 +90,7 @@
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
 					<li><a href="../interfaces/idot.html" class="tsd-signature-type">IDot</a></li>
-					<li><a href="../interfaces/iedgetarget.html" class="tsd-signature-type">IEdgeTarget</a></li>
+					<li><a href="../interfaces/inode.html" class="tsd-signature-type">INode</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -106,6 +106,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="node.html#attributes" class="tsd-kind-icon">attributes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="node.html#comment" class="tsd-kind-icon">comment</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="node.html#id" class="tsd-kind-icon">id</a></li>
 							</ul>
@@ -133,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Node.ts#L25">model/Node.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Node.ts#L18">model/Node.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -150,12 +151,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="attributes" class="tsd-anchor"></a>
+					<h3>attributes</h3>
+					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <a href="attributes.html" class="tsd-signature-type">Attributes</a><span class="tsd-signature-symbol"> =&nbsp;new Attributes()</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#attributes">attributes</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Node.ts#L16">model/Node.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="comment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> comment</h3>
 					<div class="tsd-signature tsd-kind-icon">comment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#comment">comment</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Node.ts#L21">model/Node.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Node.ts#L15">model/Node.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -169,8 +182,9 @@
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Node.ts#L26">model/Node.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Node.ts#L19">model/Node.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,8 +200,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#port">port</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Node.ts#L45">model/Node.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Node.ts#L38">model/Node.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,10 +229,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/idot.html">IDot</a>.<a href="../interfaces/idot.html#todot">toDot</a></p>
+								<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#todot">toDot</a></p>
 								<p>Overrides <a href="dotbase.html">DotBase</a>.<a href="dotbase.html#todot">toDot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Node.ts#L32">model/Node.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Node.ts#L25">model/Node.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -238,9 +253,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/iedgetarget.html">IEdgeTarget</a>.<a href="../interfaces/iedgetarget.html#toedgetargetdot">toEdgeTargetDot</a></p>
+								<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#toedgetargetdot">toEdgeTargetDot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/dbeb6a1/src/model/Node.ts#L40">model/Node.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/c4e6c01/src/model/Node.ts#L33">model/Node.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,6 +312,9 @@
 								<a href="node.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="node.html#attributes" class="tsd-kind-icon">attributes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="node.html#comment" class="tsd-kind-icon">comment</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -325,16 +343,49 @@
 						<a href="subgraph.html" class="tsd-kind-icon">Subgraph</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iattributes.html" class="tsd-kind-icon">IAttributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iattributesbase.html" class="tsd-kind-icon">IAttributes<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icluster.html" class="tsd-kind-icon">ICluster</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/icontext.html" class="tsd-kind-icon">IContext</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/idot.html" class="tsd-kind-icon">IDot</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iedge.html" class="tsd-kind-icon">IEdge</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iedgetarget.html" class="tsd-kind-icon">IEdge<wbr>Target</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ihasattributes.html" class="tsd-kind-icon">IHas<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ihascomment.html" class="tsd-kind-icon">IHas<wbr>Comment</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iid.html" class="tsd-kind-icon">IID</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/inode.html" class="tsd-kind-icon">INode</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/inodewithport.html" class="tsd-kind-icon">INode<wbr>With<wbr>Port</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iport.html" class="tsd-kind-icon">IPort</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/irootcluster.html" class="tsd-kind-icon">IRoot<wbr>Cluster</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/isubgraph.html" class="tsd-kind-icon">ISubgraph</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
@@ -344,9 +395,6 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#graph" class="tsd-kind-icon">graph</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="../globals.html#iscompass" class="tsd-kind-icon">is<wbr>Compass</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="../globals.html#strict" class="tsd-kind-icon">strict</a>
